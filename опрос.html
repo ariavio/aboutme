@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Опрос</title>
+</head>
+<body bgcolor="BlanchedAlmond">
+    <table >
+        <tr>
+            <td><a href="2.html">Обо мне</a></td><td><a href="ege.html">Результаты ЕГЭ</a></td><td><a href="3.html">Предметы</a></td><td><a href="photo.html">Галерея фото</a></td><td><a href="меню.html">Навигация</a></td><td><a href="опрос.html">Опрос</a></td>
+        </tr>
+    </table>
+    <h1 align="center" style=color:#472811>Опрос</h1>
+    <marquee hspace="100" height="30" bgcolor="Coral">Пройдите опрос.</marquee>
+    
+    <form target="_self" autocomplete="on">
+        <p>Дата заполнения</p>
+        <input type="date">
+
+        <p>Ваше имя и фамилия:</p>
+        <input type="text">
+
+        <p>Ваш возраст:</p>
+        <select name="age" size="1">
+            <option value="1">14 лет</option>
+            <option value="2">15 лет</option>
+            <option value="3">16 лет</option>
+            <option value="4">17 лет</option>
+            <option value="5">18 лет</option>
+            <option value="6">19 лет</option>
+            <option value="7">20 лет</option>
+            <option value="8">21 год</option>
+            <option value="9">22 года</option>
+            <option value="10">23 года</option>
+            <option value="11">24 года</option>
+            <option value="12">25 лет</option>
+            <option value="13">26 лет</option>
+            <option value="14">27 лет</option>
+            <option value="15">28 лет</option>
+            <option value="16">29 лет</option>
+            <option value="17">30 лет</option>
+        </select>
+
+        <p>Вы:</p>
+        <select name="choice" size="4" multiple>
+            <option value="first">Ученик</option>
+            <option value="second">Студент</option>
+            <option value="third">Рабочий</option>
+            <option value="fourth">Ничего из вышеперечисленного</option>
+        </select>
+
+        <p>Место учебы/работы:</p>
+        <input type="text">
+
+        <p>Страны, которые вы бы хотели посетить:</p>
+        <p><input  type="radio" value="avstralia">Австралия</p>
+        <p><input  type="radio" value="brazilia">Бразилия</p>
+        <p><input  type="radio" value="velikobr">Великобритания</p>
+        <p><input  type="radio" value="germania">Германия</p>
+        <p><input  type="radio" value="italia">Италия</p>
+        <p><input  type="radio" value="kanada">Канада</p>
+        <p><input  type="radio" value="norvegia">Норвегия</p>
+        <p><input  type="radio" value="not">Не хочу никуда</p>
+        
+        <p>Что-нибудь дополнительное о себе:</p>
+        <textarea placeholder="Хобби или достижения" wrap='virtual' name="name"></textarea>
+        
+        <p>Ваша электронная почта:</p>
+        <input type="email">
+        <br>
+        <br>
+
+        <input type="submit" name="submit">
+    </form>
+    <marquee scrollamount="2" height="50" bgcolor="PaleGreen" behavior="slide" direction="down">Спасибо что прошли <3</marquee>
+</body>
+</html>
