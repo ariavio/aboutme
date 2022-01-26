@@ -17,6 +17,7 @@ section.block{
     padding-bottom: 80px;
     border: solid 90px;
     border-image: url("https://pngimg.com/uploads/floral_frame/floral_frame_PNG275.png") 370 repeat;
+    max-width: 1400px
 }
 picture.picbr{
     position: relative;
