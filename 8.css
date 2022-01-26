@@ -1,0 +1,46 @@
+/*  -ВТОРАЯ РАМКА-
+section.block{
+    text-align: center;
+    border:double 10px rgba(121, 66, 0, 0.623);
+    background-color: rgb(255, 248, 232);
+    border-bottom-left-radius: 50px 40px;
+    border-bottom-right-radius: 50px 40px;
+    border-top-left-radius: 50px 40px;
+    border-top-right-radius: 50px 40px;
+    margin: 40px 30px;
+    padding-bottom: 80px;
+}
+*/
+section.block{
+    text-align: center;
+    margin: 40px 30px;
+    padding-bottom: 80px;
+    border: solid 90px;
+    border-image: url("https://pngimg.com/uploads/floral_frame/floral_frame_PNG275.png") 370 repeat;
+}
+picture.picbr{
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+picture.picbl{
+    position: relative;
+    right: 30px;
+    top: 30px;
+}
+picture.pictr{
+    position: relative;
+    left: 30px;
+    bottom: 30px;
+}
+picture.pictl{
+    position: relative;
+    right: 30px;
+    bottom: 30px;
+}
+body{
+    background-image: url("https://i1.wp.com/oboi17.ru/wp-content/uploads/2018/11/4537-2.jpeg?resize=847%2C512");
+}
+h1{
+    font-size:xx-large;
+}
