@@ -28,12 +28,6 @@
                 position: relative;
                 left: 5px;
             }
-            .table{
-                background-color: rgb(255, 223, 253);
-            }
-            .table2{
-                background-color: rgb(255, 254, 215);
-            }
             .call{
                 position: relative;
                 bottom: 8px;
@@ -99,7 +93,7 @@
                 background-color: #ffffff;
             }
             p{
-                
+                align-items: center;
                 padding-left: 5%;
                 padding-right: 5%;
             }
@@ -123,14 +117,59 @@
             a:hover {
             text-decoration: underline;
             }
-            .input{
-                width:  600px;
-                height: 150px;
+            
+            
+            input{
+                align-items: center;
+                width: 100%;
+                border-radius: 10px;
+                border: 2px solid rgb(196, 177, 196);
+                padding: 5px;
+                color: #000000;
+            }
+            textarea{
+                align-items: center;
+                width: 100%;
+                resize: none;
             }
             
 
         </style>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+        <script>
+            $(document).ready (function (){
+                $("#done").click (function () {
+                    $('#messageShow').hide ();
+                    var name = $("name").val ();
+                    var email = $("email").val ();
+                    var company = $("company").val ();
+                    var address = $("address").val ();
+                    var link = $("link").val ();
+                    var message = $("message").val ();
+                    var fail = "";
+                    if (email.split ('@').length - 1 == 0 || email.split ('.').length - 1 == 0)
+                        fail = "Вы ввели некорректный email"
+                    if (fail != "") {
+                        $('messageShow').html (fail + "<div class='clear'><br></div>");
+                        $('messageShow').show ();
+                        return false;
+                    }
+                    $.ajax ({
+                        url: 'feedback.php',
+                        type: 'POST',
+                        cache: false,
+                        data: {'name': name, 'email':email, 'company':company, 'address':address, 'link':link, 'message':message},
+                        dataType: 'html',
+                        success: function(data){
+                            $('#messageShow').html (data + "<div class='clear'><br></div>");
+                            $('#messageShow').show();
+                        }
+                    
+                    });
+                });
+            });
+        </script>
     </head>
     
     <body>
@@ -186,11 +225,28 @@
     <br>
     <br>
 <p>Здравствуйте! Если Вы нуждаетесь в помощи, пожалуйста, напишите нам, Ваше объявление будет рассмотрено и в скором времени появится на сайте.</p>
-<form>
-    <p><input class="input" placeholder="" name="user"></p>
-    <p><input type="submit" value="Отправить" 
-     formaction="handler.php" formmethod="post"></p>
-</form>
+
+<table align="center" width="30%" >
+    <tr>
+        <td>
+            <form action="sender.php" method="post">
+            <div id="wrapper">
+                <div class="leftCol">
+                    <input type="text" placeholder="Имя Фамилия" id="name" name="name"><br><br>
+                    <input type="text" placeholder="Электронная почта" id="email" name="email"><br><br>
+                    <input type="text" placeholder="Название компании" id="company" name="company"><br><br>
+                    <input type="text" placeholder="Адрес" id="address" name="address"><br><br>
+                    <input type="text" placeholder="Ссылка на соцсеть или сайт компании" id="link" name="link"><br><br>
+                    <textarea name="massage" placeholder="Ваше обращение" id="massage"></textarea><br>
+                    <button type="button">Отправить</button><br>
+                    <div class="status"></div>
+                </div>
+            </div>
+            </form>
+        </td>
+    </tr>
+</table>
+
 <br>
 <p>Или напишите нам на почту creategoodnesss@gmail.com</p>
 
