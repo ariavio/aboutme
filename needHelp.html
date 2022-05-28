@@ -4,13 +4,6 @@
         <title>Твори добро с нами!</title>
         <link rel="shortcut icon" href="favicon1.png">
         <style>
-            li {
-                list-style-type: none; 
-            }
-            ul {
-                margin-left: 0; 
-                padding-left: 0; 
-            }
             .pic{
                 position: relative; 
                 top: 10px;
@@ -82,14 +75,12 @@
             .navbar.navbar-expand-lg.navbar-light.bg-light{
                 background-color: rgb(255, 223, 253);
             }
-            .bar{
-                background-color: rgb(255, 223, 253);
-            }
             .logo{
                 position: relative;
                 bottom: 8px;
             }
             .body{
+                /* фиксированный фон*/
                 width: 100%;
                 background-image: url(Glavnaya.png);
                 background-attachment: fixed;
@@ -102,7 +93,6 @@
                 padding-right: 5%;
                 color:white;
             }
-            
             big{
                 padding-left: 5%;
                 padding-right: 10%;
@@ -120,7 +110,7 @@
                 text-decoration: none;
             }
             a:hover {
-            text-decoration: underline;
+                text-decoration: underline;
             }
             input{
                 align-items: center;
@@ -136,9 +126,18 @@
                 resize: none;
             }
             .cir1{
+                /*закругленный фон за текстом*/
                 border-radius: 30px;
                 background: #d46d6d;
                 padding: 10px;
+            }
+            .body{
+                /* фиксированный фон*/
+                width: 100%;
+                background-image: url(Glavnaya.png);
+                background-attachment: fixed;
+                background-repeat:none;
+                background-size: 100%;
             }
             .p-footer{
                 color:black;
