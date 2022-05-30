@@ -248,13 +248,13 @@
             <form action="sender.php" method="post">
             <div id="wrapper">
                 <div class="leftCol" align="center">
-                    <input type="text" placeholder="Имя Фамилия" id="name" name="name"><br><br>
+                    <input type="text" placeholder="Имя Фамилия" id="namess" name="namess"><br><br>
                     <input type="text" placeholder="Электронная почта" id="email" name="email"><br><br>
                     <input type="text" placeholder="Название компании" id="company" name="company"><br><br>
                     <input type="text" placeholder="Адрес" id="address" name="address"><br><br>
                     <input type="text" placeholder="Ссылка на соцсеть или сайт компании" id="link" name="link"><br><br>
                     <textarea name="massage" placeholder="Ваше обращение" id="massage"></textarea><br>
-                    <button type="button">Отправить</button><br>
+                    <button onclick="location.href='/https://ariavio.github.io/aboutme/needHelp.html/'" type="button">Отправить</button><br>
                     <div class="status"></div>
                 </div>
             </div>
@@ -273,7 +273,20 @@
     </tr>
 </table>
 <br>
-
+<script type="text/javascript">
+    button.onclick = function() {
+        var email = document.getElementById("email").value;
+        var namess = document.getElementById("namess").value;
+        var company = document.getElementById("company").value;
+        var address = document.getElementById("address").value;
+        var link = document.getElementById("link").value;
+        var massage = document.getElementById("massage").value;
+        document.getElementById('email').innerHTML="Вы ввели: " + email;
+        console.log(email);
+        
+    };
+    document.write(email);
+</script>
    
      
 </header>
