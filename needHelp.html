@@ -148,14 +148,15 @@
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
         <script type="text/javascript">
             function writefile(){
+                var button, email, names, company, address, link, massage;
                 const fs = require('fs');
-                var button = document.querySelector('knopka');
-                var email = document.getElementById("email").value;
-                var names = document.getElementById("name").value;
-                var company = "Компания";
-                var address = document.getElementById("address").value;
-                var link = document.getElementById("link").value;
-                var massage = document.getElementById("massage").value;
+                button = document.querySelector('knopka');
+                email = document.getElementById("email").value;
+                names = document.getElementById("names").value;
+                company = document.getElementById("company").value;
+                address = document.getElementById("address").value;
+                link = document.getElementById("link").value;
+                massage = document.getElementById("massage").value;
                 fs.appendFile('f.txt', document.getElementById("email").value, function(){});
                 fs.appendFile('f.txt', names, function(){});
                 fs.appendFile('f.txt', company, function(){});
@@ -232,13 +233,13 @@
             <form action="sender.php" method="post">
             <div id="wrapper">
                 <div class="leftCol" align="center">
-                    <input type="text" placeholder="Имя Фамилия" id="namess" name="name"><br><br>
+                    <input type="text" placeholder="Имя Фамилия" id="names" name="names"><br><br>
                     <input type="text" placeholder="Электронная почта" id="email" name="email"><br><br>
                     <input type="text" placeholder="Название компании" id="company" name="company"><br><br>
                     <input type="text" placeholder="Адрес" id="address" name="address"><br><br>
                     <input type="text" placeholder="Ссылка на соцсеть или сайт компании" id="link" name="link"><br><br>
                     <textarea name="massage" placeholder="Ваше обращение" id="massage"></textarea><br>
-                    <button id="knopka" onclick="writefile()" type="button">Отправить</button><br>
+                    <button onclick="writefile()" id="knopka" type="button">Отправить</button><br>
                     <div class="status"></div>
                 </div>
             </div>
