@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Твори добро с нами!</title>
+        <link rel="shortcut icon" href="favicon1.png">
+        <style>
+            li {
+                list-style-type: none; 
+            }
+            ul {
+                margin-left: 0; 
+                padding-left: 0; 
+            }
+            .pic{
+                position: relative; 
+                top: 10px;
+            }
+            .pic2{
+                position: relative;
+                top: 10px;
+                right: 5px;
+            }
+            .contact{
+                position: relative;
+                right: 10px;
+            }
+            .mail{
+                position: relative;
+                left: 5px;
+            }
+            
+            .call{
+                position: relative;
+                bottom: 8px;
+            }
+            .dropbtn {
+                /* кнопка */
+                background-color: rgb(248, 249, 251);
+                color: rgb(112, 122, 113);
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                /* фон выпада меню */
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown-content a {
+                /* цвет текста выпадающего меню */
+                color: rgb(0, 0, 0);
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content a:hover {
+                /*цвет навождения на выпадающее */
+                background-color: #ddd;
+            }
+            .dropdown:hover .dropdown-content {
+                /* */
+                display: block;
+            }
+            .dropdown:hover .dropbtn {
+                /* цвет навождения на кнопку */
+                background-color: rgb(248, 249, 251);
+            }
+            .nav-item.dropdown{
+                position: relative;
+                bottom: 4px;
+            }
+            .collapse.navbar-collapse{
+                background-color: rgb(248, 249, 251);
+            }
+            .navbar.navbar-expand-lg.navbar-light.bg-light{
+                background-color: rgb(255, 223, 253);
+            }
+            .bar{
+                background-color: rgb(255, 223, 253);
+            }
+            .logo{
+                position: relative;
+                bottom: 8px;
+            }
+            .body{
+                width: 100%;
+                background-image: url(Glavnaya.png);
+                background-attachment: fixed;
+                background-repeat:none;
+                background-size: 100%;
+            }
+            p{
+                color:white;
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+            
+            big{
+                color:white;
+                padding-left: 5%;
+                padding-right: 10%;
+            }
+            a:link {
+                color: #212226; /* Цвет ссылок */
+                text-decoration: none;
+            }
+            a:visited {
+                color: #212226; /* Цвет посещенных ссылок */
+                text-decoration: none;
+            }
+            a:active {
+                color: #ffffff; /* Цвет активных ссылок */
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: #ff88f1;
+            }
+            .attention{
+                color:rgb(255, 249, 65)
+            }
+            .cir{
+                position: relative;
+                left: 10px;
+                border-radius: 30px;
+                background: #d46d6d;
+                padding: 10px;
+            }
+            h3{
+                padding-left: 5%;
+                padding-right: 5%;
+                color:white;
+            }
+            .animals{
+                /*задание цвета маркера для тега #приют*/
+                background-color: rgb(255, 149, 248);
+                display: inline;
+            }
+            .cats{
+                /*задание цвета маркера для тега #кошки*/
+                background-color: rgb(244, 255, 149);
+                display: inline;
+            }
+            .dogs{
+                /*задание цвета маркера для тега #собаки*/
+                background-color: rgb(156, 255, 149);
+                display: inline;
+            }
+            .wild{
+                /*задание цвета маркера для тега #дикие_животные*/
+                background-color: rgb(168, 149, 255);
+                display: inline;
+            }
+            .child{
+                /*задание цвета маркера для тега #детский_дом*/
+                background-color: rgb(255, 200, 149);
+                display: inline;
+            }
+            .p-footer{
+                color: black;
+            }
+
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    
+    <body>
+    <header class="body">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!-- <div class="bar"> -->
+                <a class="navbar-brand" href="home.html"><img class="logo" src="лого1.png" width="200" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="helpNow.html">Помочь самостоятельно<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donate.html">Помочь финансово</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="needHelp.html">Попросить помощь</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">Частозадаваемые вопросы</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <div class="dropdown">
+                                            <button class="dropbtn">Объявления ▼</button>
+                                            <div class="dropdown-content">
+                                                <a href="ads.html">Все объявления</a>
+                                                <a href="adsDistrict.html">Объявления по округам</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            <!--</div>-->
+            </nav>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </div>
+    <br>
+    <br>
+
+<table width="90%" align="center" >
+    <tr>
+        <td colspan="3" class="cir">
+            <p align="center">Вы можете найти интересующую Вас помощь по тэгу, ориентируясь по цветному маркеру, или нажав на клавиатуре Ctrl+F или в телефоне "Поиск на странице".</p> <p align="center"> Доступный список тегов: <mark class="animals">#приют</mark> <mark class="cats">#кошки</mark> <mark class="dogs">#собаки</mark> <mark class="wild">#дикие_животные</mark> <mark class="child">#детский_дом</mark> </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br>
+            <br>
+
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" class="cir">
+            <a href="https://instagram.com/takehappinessbf?igshid=YmMyMTA2M2Y="><h3 align="left">Фонд «Возьми счастье в дом»</h3></a> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://instagram.com/takehappinessbf?igshid=YmMyMTA2M2Y="><img src="image_2022-05-12_09-36-15.png" alt="" width="150"></a>
+        </td>
+        <td class="cir">
+            <p > <a class="attention">Внимание!</a> Ссылка ведет на инстаграм организации, необходимо заходить с ВПН.</p>
+            <p align="justify">Необходима помощь с написанием текстов на сайте. Нужно на передержке вычесать 3 собак. Нужна помощь с размещением рекламных объявлений на поиск дома для собак и котов, можно выбрать одного кого то и прокачивать системно объявление в соц.сетях и на досках объявлений. Раз в неделю или чаще можно приезжать гулять с собаками. Можно организовать сбор кормов для котов и собак</p> <br>
+            <p>Место: Красногорский район</p>
+            <p> <mark class="animals">#приют</mark>  <mark class="cats">#кошки</mark> <mark class="dogs">#собаки</mark></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="3" class="cir">
+            <a href="https://ecozoo.ru/kto-my/"><h3 align="left">Общественная организация «Экология человека»</h3></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://ecozoo.ru/kto-my/"><img src="logoecozoo.png" alt="" width="150"></a>
+        </td>
+        <td class="cir">
+            <p align="justify">Нам всегда нужна помощь со сбором кормов для подопечных приюта. Есть животные, которые нуждаются в лечебном питании. Можно стать опекуном (самому или командой) для конкретного животного. Есть список постоянных нужд (хозтовары, амуниция для животных). Нам нужны волонтеры в приюте - для выгула собак, социализации. Ещё мы ищем помощников для пиара животных в соцсетях - это можно делать удаленно. Нужны фотографы, можно снимать и монтировать ролики про животных - это очень повышает их шансы найти дом.</p> <br>
+            <p>Место: Москва, Одинцовский район</p>
+            <p><mark class="animals">#приют</mark> <mark class="cats">#кошки</mark> <mark class="dogs">#собаки</mark> <mark class="wild">#дикие_животные</mark></p>
+        </td>
+    </tr>
+    <tr colspan="3">
+        <td>
+            <br>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" class="cir">
+            <a href="https://rus.dog/"><h3 align="left">Общественная организация защиты животных «РусДог»</h3></a> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td class="">
+            <a href="https://rus.dog/"><img src="logorusdog.png" alt="" width="150"></a>
+        </td>
+        <td class="cir">
+            <p align="justify">Необходимы<u><i> медицинские препараты и расходники</i></u> в любых количествах, так как расход очень большой: Левомеколь, Перекись, Хлоргексидин, Натрия Хлорид, Стерильные салфетки, Самоклеящиеся бинты, Бранолинд Н, Пластыри Космопорт, Шприцы (2 мл - 10 мл) , Пеленки впитывающие (размер - 60-90), Энтеросгель, Полисорб, Энтерол(в капсулах), Энтерофурил (капсулы), Урсосан (250 мг), Урсофальк(250 мг), Амоксиклав (суспензия), Амоксициллин(250 мг, таблетки), Секнидокс, Реаферон(для инъекций), Реамберин(раствор для инфузий), Транексам(250 мг, таблетки), Баралгин(для инъекций), Альбумин(для инфузий), Лонгидаза(свечи), Панкреатин(любая дозировка), Клацид(суспензия), Цианокобаламин - Витамин B12 (для инъекций.
+                <u><i>Ветеринарные препараты</i></u>: Синулокс, Гепатоджект(раствор для инъекций), Ивермек, Капли от клещей, Спрей Больфо, Террамицин, Серения( для инъекций), Маропиталь(для инъекций), Кобактан, Лайна, Воротники для животных(объём шеи 25-40 см)</p> <br>
+            <p>Место: Московская область, Ленинский городской округ</p>
+            <p><mark class="animals">#приют</mark> <mark class="dogs">#собаки</mark></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="cir">
+            <a href="https://kotodommurlyka.ru/"><h3 align="left">Частный мини-приют «Котодом Мурлыка»</h3></a> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://kotodommurlyka.ru/"><img src="image_2022-05-12_10-05-22.png" alt="" width="150"></a>
+        </td>
+        <td class="cir" >
+            <p align="justify">Нужна помощь со следующими товарами: <u><i>влажные корма</i></u>: Purina Cat Chow Kitten; <u><i>хозяйственные товары</i></u>: перчатки, мыло, мусорные пакеты, бытовая химия; <u><i>лекарства</i></u>: хлоргексидин.</p> <br>
+            <p>Место: Балашиха, Советская ул, 36к6</p>
+            <p><mark class="animals">#приют</mark> <mark class="cats">#кошки</mark></p>
+        </td>
+    </tr>
+    
+</table>
+
+
+
+
+<br>
+     
+</header>
+<footer class="page-footer font-small blue pt-4 border-top">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase">Бумеранг добра</h5>
+                <p class="p-footer">Студенты Московского Политеха, Москва</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-3 mb-md-0 mb-3">
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Контакты</h5>
+                <br>
+                <ul class="list-unstyled">
+                    <li class="call">
+                        <img  href="#!"><img src="https://png.pngtree.com/png-vector/20191011/ourlarge/pngtree-phone-icon-png-image_1817554.jpg" height="25"></img>7(499)999-99-99</a>
+                    </li>
+                    <li>
+                        <img class="mail" href="#!"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAAA+Pj7i4uL6+vrExMTIyMiqqqrz8/OFhYXe3t709PSmpqbLy8tnZ2coKChDQ0NfX19bW1t+fn66uroVFRWLi4s3Nzc0NDTZ2dnq6uoODg4qKioaGhp8fHwTExNVVVUgICCdnZ33Lv2hAAAESUlEQVR4nO2da1viMBBGU4oVCwVUWC5e1vX//8hVdB8hzTS3SSZl3/OVXnJCnUwmKSoFAAAAAAAAAAAAAAAAAAAAAAAAjJHNcnIdLDdGv3ZVXQ+rti94kG4UM4ee4TV9g5+sdMFb6Raxc6sZrqUbxM5aM5RuTwJgOH5gOH5gOH5geM7rsS6R4yObYXU/VeUxXfJ9hx/ciEgM0diarB1vO7y6E9Gg+WVtsXaC9fhqYphUilE7zBS0U+wnVNVCRMaE01xPO8fllOp+JuKjM7OEGBfDw8R80ksJAefmxdy4nVaI0U7TP7wjOkY+4FAh5q4vccHlhx/DX/dkvtCzbMCp94Rg8zFA+hnST7tkwKFCzClC+BpaLifBfLjT/Q3JR+KpyWv2Tffb3Jzn+uvzAEM64DxmFHNuS5ChaojQPOnXlNPSElnM9mcACzNU8wei6/IGnAXRirezmBBoSAech3wBZ37v0s3BhqomMpynXBlOQ4SYXX1xWLjhYB6RAfLuWjNjDFVH3ETrxRQciSeo6g1ZUYZq6vSXkAAyChjaGGUolOF4pY6xhqremW+WcErV/DHfcm9M/6MN6azilVnsH1S1kMioGAw9+zQS72eGw9Bx6GWBymLoRIPFcCDgzJnMvlsbMDtlMlRH4uFhLRpT5d790PjLZZijhhOWQ/EZknkiU9GYKvfa8mBGw7RTKuov/c2WWnAaRjTDRkTn8RqSc+7IKVWzNV/W5Q+A2TBNDSfqmuyG1tqXN2Rtz+254De01S99iU0mEhiy1nDiE8IkhuSDtfUtGndE2dK025cgjSFXwOG4SipDckq1c+99aqK09Rp6khnGr1IxFUjSGXqViwwN45pzpjSk90bYAw5VqPRP45MahheNGYvNiQ1VQyyLD05aWafTqQ1DhmzekkhyQ+/i0Yzqkvew22cwdFnG/IFcfA2tFOQw9Knh8E++8hiS+aW2D6d+Nh8WswkikyGd4Zy/iJRkmSeXoUPzyXml/jaWH/kMyUS66k4fU1nM4MjpQEbDwYXpabIl86yG6oaqmXU+A4ofeQ3p4dwMx9aVzIZ+r6WyLM5lN3Tabn6Cab0jv6HLKwOf6PtiQpEwJAeGc9i2cooYWl/d4Vw7ljG0BZy4LOYSKUPVUhkO9x4OMcNsrzYIGppXBdk3b0oamqZUyyP3TUQN+wEnwZ5GYcPLncZJ9qVKG55nOGn2Fssbqu5rsXHfpbl8AYZKHRbvi2RvahRhmBQYwrB8YAjD8oEhDMsHhjAsHxjCsHxgCMPygSEMyweGMCwfGMKwfGAIw/KBIQzLB4YwLB8YwrB8YAjD8oEhDMsHhjAsHxjCsHxgCMPy8TFspf8tXhCth+FVAMPxA8PxA8Px898Zuv4MyXhYa4Y+PyYzDnq/R7GSbhEzK11QHewnjQrD28btNX2LxC9Ib5aT62C5MfoBAAAAAAAAAAAAAAAAAAAAAAAApfMXPoBOhk1BDZEAAAAASUVORK5CYII=" height="25"></img>creategoodnesss@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+        <a href="https://ariavio.github.io/aboutme/home.html"> нашсайт.com</a>
+    </div>
+</footer>
+</body>
+</html>
